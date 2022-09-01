@@ -5,12 +5,10 @@ import HogBox from './HogBox';
 import hogs from "../porkers_data";
 
 function App() {
-	// const [ hogsShown, setHogsShown ] = useState(hogs);
+	const [ hogsShown, setHogsShown ] = useState(hogs);
 	const [ showGreased, setShowGreased ] = useState(false);
 	const [ sortedByName, setSortedByName ] = useState(false)
 	const [ sortedByWeight, setSortedByWeight ] = useState(false)
-
-	let hogsShown = hogs;
 
 	function sortName() {
 		if(sortedByName === false) {
